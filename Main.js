@@ -45,3 +45,17 @@ counter1(); // Output is : 3
 // Now what happens here ?
 // The count is a inner scope and scence after use the scope the scope dies but here the createCounter function called 3 times so unless the function end use the variable count it will keep alive. but after end of use the count will remove from the memory. or dies.
 // So this will called clouser memory
+
+// Closure Example 2 - Independent Memories
+const counterA = createCounter();
+const counterB = createCounter();
+
+counterA(); // Output is : 1
+counterA(); // Output is : 2
+counterB(); // Output is : 1
+
+// Now what happens here ?
+// The counterA will called 2 times and the inner function will keep the count variable in its clouser memory and increment it 2 times. and the dies or remove from memory.
+// But when The counterB will called the function ones to run so the inner function or i would say the counter will run again but totally independent memory so the count variable will start from 0 and increment it to 1. and then the inner function will remove from the memory.
+
+// **************** That's basically enxapsulation - the backbone of data privacy and modular programming. ****************
