@@ -59,3 +59,4 @@ counterB(); // Output is : 1
 // But when The counterB will called the function ones to run so the inner function or i would say the counter will run again but totally independent memory so the count variable will start from 0 and increment it to 1. and then the inner function will remove from the memory.
 
 // **************** That's basically enxapsulation - the backbone of data privacy and modular programming. ****************
+
