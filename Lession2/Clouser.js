@@ -31,10 +31,10 @@ function createAccount(owner) {
 const myAccount = createAccount("Bob");
 
 // Try Deposit
-myAccount.deposit(100); // Bob's balance: $100
+myAccount.deposit(100); // Bob's balance is: $100
 
 // Try Withdraw for then the balance.
 myAccount.withdraw(200); // Insufficient funds for Bob. Current balance is: $100
 
 // Try Withdraw for valid amount
-myAccount.withdraw(50); // Bob's balance: $50
+myAccount.withdraw(50); // Bob's balance is: $50
