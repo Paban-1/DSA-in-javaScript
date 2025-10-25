@@ -50,6 +50,10 @@ function greetAgain(name) {
 // Call the first function for greeting bob
 greet("Bob");
 
+
+
+
+
 // Example 2 : Recursive Sum
 
 // Let's Sum number from 1 to n.
@@ -80,3 +84,15 @@ console.log("The Recursive Way:", sumN(5)); // Output: 15
 // sumN(2)        ->        2 + sumN(1)
 // sumN(1)        ->        1 (Base Case reached here)
 // Then they all unroll backwards, adding up to 15
+
+
+// Example 3: Factorial (Classic DSA Question)
+// n! = n * (n-1) * (n-2) * ... * 1
+
+function factorial(n) {
+  if (n === 1) return 1; // Base Case
+  return n * factorial(n - 1); // Recursive Case
+}
+
+console.log("The Factorial is :",factorial(5)); // 120
+// Note: -> This will see again when we do divide & conquer alfroithm like merge sort , quick sort etc.
