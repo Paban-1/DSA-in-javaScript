@@ -50,3 +50,33 @@ function greetAgain(name) {
 // Call the first function for greeting bob
 greet("Bob");
 
+// Example 2 : Recursive Sum
+
+// Let's Sum number from 1 to n.
+
+
+// Iterative way
+let sum = 0;
+for (let i = 0; i <= 5; i++) {
+  sum += i;
+}
+console.log("The Iterative Way:", sum);
+
+
+
+// Recursive way
+function sumN(n) {
+  if (n === 1) return 1; // Base Case
+  return n + sumN(n - 1); // Recursive Case
+}
+
+console.log("The Recursive Way:", sumN(5)); // Output: 15
+
+// Here What Happen ?
+// Call           |        What is return ?
+// sumN(5)        ->        5 + sumN(4) 4 cause the n - 1
+// sumN(4)        ->        4 + sumN(3)
+// sumN(3)        ->        3 + sumN(2)
+// sumN(2)        ->        2 + sumN(1)
+// sumN(1)        ->        1 (Base Case reached here)
+// Then they all unroll backwards, adding up to 15
