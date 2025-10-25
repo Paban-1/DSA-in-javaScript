@@ -29,3 +29,24 @@ countdown(5);
 // Done !
 
 // Eatch call goes onto the call stack, which is a line of wo waiting for what ?
+
+// The Call Stack: Where Recursion Lives
+
+// Call stack is like stack of plates.
+// evevry time a function start it gets added on top
+// when it finishes it get removed.
+
+// Function for greeting bob at first time
+function greet(name) {
+  console.log(`Hi ${name}`);
+  greetAgain(name);
+}
+
+// Function for greet bob again
+function greetAgain(name) {
+  console.log(`Nice to meet you ${name}`);
+}
+
+// Call the first function for greeting bob
+greet("Bob");
+
