@@ -96,3 +96,12 @@ function factorial(n) {
 
 console.log("The Factorial is :",factorial(5)); // 120
 // Note: -> This will see again when we do divide & conquer alfroithm like merge sort , quick sort etc.
+
+
+// What Happen if we forget Base ?
+function recurse(n){
+  console.log(n);
+  recurse(n - 1)
+}
+// recurse(1)
+// This will caused an infinite recursion which overflows the call stack
