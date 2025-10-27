@@ -23,3 +23,14 @@ function sumOfDigits(num) {
 console.log("Sum of Digits:", sumOfDigits(12345)); // Output: 15
 
 // 3) -> count how many time a letter appears in a string recursively
+function countLetter(str, letter) {
+  function helper(s, l, index) {
+    if (index === s.length) {
+      return 0;
+    } // Base case
+    const count = s[index] === l ? 1 : 0;
+    return count + helper(s, l, index + 1);
+  }
+  return helper(str, letter, 0);
+}
+console.log("Count of 'a':", countLetter("banana", "a")); // Output: 3
