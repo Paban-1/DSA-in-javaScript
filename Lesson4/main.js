@@ -33,3 +33,17 @@ fruits.unshift("kiwi");
 console.log(fruits);
 
 
+
+// UnderStanding Copy VS Reference.
+let arr1 = [1,2,3]
+let arr2 = arr1; // arr2 is reference to arr1
+arr2.push(4);
+
+console.log(arr1); // arr1 is also changed [1,2,3,4]
+// why it happen ? cause the arrays are reference type.
+
+// If we don't want to create reference then 
+// let arr2 =[...arr1] By this the arr2 have made a copy of arr1.
+
+
+
