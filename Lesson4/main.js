@@ -55,7 +55,27 @@ for (let value of arr) {
 }
 
 // forEach method
-arr.forEach((item, index)=>console.log(index, item))
+arr.forEach((item, index) => console.log(index, item));
 
 // Array map method
 let squaredArr = arr.map((item) => item * item);
+
+// Higher Order array Methods
+
+// .map() Transforms every element and return a new array
+let nums = [1, 2, 3];
+let doubled = nums.map((n) => n * 2); // [2,4,6]
+console.log(doubled); // [2,4,6]
+
+
+// .filter() Keeps only the items that match a condition
+let even = nums.filter(n => n % 2 === 0) // [2]
+console.log(even); // [2]
+
+
+// .reduce() Combines all elements into a single value.
+let sum  = nums.reduce((accumulator, current) => accumulator + current, 0) // 6
+console.log(sum); // 6
+
+// Will use reduce evevrrywhere in algorithmic thinking.
+// Like a loop + memory combined.
