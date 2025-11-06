@@ -53,6 +53,7 @@ for (let i = 0; i < arr.length; i++) {
 for (let value of arr) {
   console.log(value);
 }
+ 
 
 // forEach method
 arr.forEach((item, index) => console.log(index, item));
@@ -79,3 +80,5 @@ console.log(sum); // 6
 
 // Will use reduce evevrrywhere in algorithmic thinking.
 // Like a loop + memory combined.
+
+console.log("test commit");
