@@ -82,5 +82,4 @@ console.log(sum); // 6
 // Like a loop + memory combined.
 
 console.log("test commit");
-console.log("test commit two);
-
+console.log("test commit two");
