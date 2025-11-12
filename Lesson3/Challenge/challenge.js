@@ -36,4 +36,4 @@ function countLetter(str, letter) {
 console.log("Count of 'a':", countLetter("banana", "a")); // Output: 3
 
 // i'll do it tomorrow !!!
-console.log(";loggggg");
+console.log(";loggggggggggggg");
